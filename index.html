@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kon James Ayuen | IT & Machine Learning Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+:root{
+  --primary:#0f172a;
+  --accent:#2563eb;
+  --bg:#f8fafc;
+  --card:#ffffff;
+  --text:#1e293b;
+  --muted:#64748b;
+  --border:#e5e7eb;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',sans-serif;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.75;
+}
+
+/* ================= HEADER ================= */
+header{
+  background:#020617;
+  color:#ffffff;
+  text-align:center;
+  padding:5rem 1.5rem 4rem;
+}
+
+.profile-img{
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid var(--accent);
+  margin-bottom:1.2rem;
+}
+
+header h1{
+  font-size:2.6rem;
+  font-weight:700;
+}
+
+header p{
+  max-width:700px;
+  margin:1rem auto 2rem;
+  color:#cbd5f5;
+}
+
+.btn{
+  display:inline-block;
+  padding:0.75rem 2rem;
+  background:var(--accent);
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  border-radius:6px;
+  transition:.25s ease;
+}
+.btn:hover{background:#1d4ed8;}
+
+/* ================= NAV ================= */
+nav{
+  background:#ffffff;
+  border-bottom:1px solid var(--border);
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+nav ul{
+  display:flex;
+  justify-content:center;
+  gap:2rem;
+  padding:0.9rem;
+  list-style:none;
+}
+
+nav a{
+  color:var(--primary);
+  text-decoration:none;
+  font-weight:500;
+}
+nav a:hover{color:var(--accent);}
+
+/* ================= SECTIONS ================= */
+section{
+  max-width:1100px;
+  margin:4.5rem auto;
+  padding:0 1.5rem;
+}
+
+h2{
+  font-size:1.9rem;
+  margin-bottom:2rem;
+  color:var(--primary);
+  border-left:4px solid var(--accent);
+  padding-left:0.75rem;
+}
+
+p{color:var(--muted);}
+
+/* ================= GRID ================= */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1.8rem;
+}
+
+/* ================= CARD ================= */
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:1.8rem;
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 15px 30px rgba(0,0,0,0.08);
+}
+
+.card h3{
+  color:var(--accent);
+  margin-bottom:0.6rem;
+  font-size:1.1rem;
+}
+
+.card ul{
+  padding-left:1.2rem;
+  color:var(--muted);
+}
+.card li{margin-bottom:0.4rem;}
+
+/* ================= ICONS & IMAGES ================= */
+.skill-icon{
+  font-size:1.8rem;
+  color:var(--accent);
+  margin-bottom:0.6rem;
+}
+
+.project-img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  border-radius:6px;
+  margin-bottom:0.8rem;
+  border:1px solid var(--border);
+}
+
+/* ================= EXPERIENCE ================= */
+.exp-role{font-weight:600;}
+.exp-org{color:var(--accent);}
+.exp-date{
+  font-size:0.85rem;
+  color:var(--muted);
+  margin-bottom:0.8rem;
+}
+
+/* ================= CONTACT ================= */
+.contact i{
+  font-size:1.8rem;
+  color:var(--accent);
+  margin-bottom:0.7rem;
+}
+.contact a{
+  color:var(--primary);
+  text-decoration:none;
+  font-weight:500;
+}
+.contact a:hover{color:var(--accent);}
+
+/* ================= FOOTER ================= */
+footer{
+  background:#020617;
+  color:#94a3b8;
+  text-align:center;
+  padding:2rem 1rem;
+  font-size:0.9rem;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:768px){
+  header h1{font-size:2.1rem;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="images/profile.jpg" alt="Kon James Ayuen" class="profile-img">
+  <h1>Kon James Ayuen</h1>
+  <p>
+    IT Professional • Machine Learning Engineer • Web Developer<br>
+    Designing intelligent systems and reliable digital solutions
+  </p>
+  <a href="cv/Kon_James_Ayuen_CV.pdf" class="btn" download>Download CV</a>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am an IT professional and Machine Learning engineer with experience in
+    developing data-driven systems, AI applications, and modern web platforms.
+    I focus on building practical, scalable, and secure digital solutions.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="grid">
+
+    <div class="card">
+      <i class="fa-solid fa-code skill-icon"></i>
+      <h3>Programming & Data</h3>
+      <ul>
+        <li>Python, JavaScript</li>
+        <li>Pandas, NumPy, Scikit-learn</li>
+        <li>TensorFlow, Keras</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-brain skill-icon"></i>
+      <h3>Machine Learning</h3>
+      <ul>
+        <li>NLP & Computer Vision</li>
+        <li>Model Training & Deployment</li>
+        <li>Predictive Analytics</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-network-wired skill-icon"></i>
+      <h3>Web & IT</h3>
+      <ul>
+        <li>Flask, Streamlit, REST APIs</li>
+        <li>System Administration</li>
+        <li>Networking & IT Support</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Selected Projects</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="images/iot-air.jpg" class="project-img">
+      <h3>IoT Air Quality Detection</h3>
+      <p>Real-time environmental monitoring using IoT sensors.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/sms-spam.jpg" class="project-img">
+      <h3>SMS Spam Detection</h3>
+      <p>NLP-based machine learning spam classifier.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/weather.jpg" class="project-img">
+      <h3>Weather Classification</h3>
+      <p>CNN model for weather image classification.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/diabetes.jpg" class="project-img">
+      <h3>Diabetes Detection</h3>
+      <p>Predictive ML system for health risk analysis.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/plant.jpg" class="project-img">
+      <h3>Medicinal Plant Classifier</h3>
+      <p>Computer vision system for plant identification.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/helpeducation.jpg" class="project-img">
+      <h3>HelpEducation South Sudan</h3>
+      <p>NGO website for education programs and storytelling.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Professional Experience</h2>
+  <div class="grid">
+
+    <div class="card">
+      <span class="exp-role">Communication & IT Officer</span><br>
+      <span class="exp-org">HelpEducation South Sudan</span>
+      <div class="exp-date">2022 – Present</div>
+      <p>IT infrastructure management, cybersecurity awareness, and digital systems.</p>
+    </div>
+
+    <div class="card">
+      <span class="exp-role">IT Trainer</span><br>
+      <span class="exp-org">Africa Educational Trust</span>
+      <div class="exp-date">2019</div>
+      <p>Delivered hands-on IT training and supported secure learning environments.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="grid">
+
+    <div class="card contact">
+      <i class="fa-solid fa-envelope"></i>
+      <p><a href="mailto:nyiel37@gmail.com">nyiel37@gmail.com</a></p>
+    </div>
+
+    <div class="card contact">
+      <i class="fa-brands fa-github"></i>
+      <p><a href="https://github.com/nyiel">github.com/nyiel</a></p>
+    </div>
+
+    <div class="card contact">
+      <i class="fa-brands fa-linkedin"></i>
+      <p><a href="https://linkedin.com/in/kon-james-ayuen">LinkedIn Profile</a></p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2025 Kon James Ayuen
+</footer>
+
+</body>
+</html>
